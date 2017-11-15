@@ -1,4 +1,4 @@
-const Contract = artifacts.require('./helpers/GzTokenMock.sol')
+const Contract = artifacts.require('./helpers/SampleTokenMock.sol')
 const ReceiverToken = artifacts.require('./helpers/TokenReceiverMock.sol')
 const NotReceivingToken = artifacts.require('./helpers/NotReceivingToken.sol')
 const assertJump = require('./helpers/assertJump')

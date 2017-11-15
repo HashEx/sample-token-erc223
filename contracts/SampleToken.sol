@@ -4,7 +4,7 @@ import "./Receiver_Interface.sol";
 import "./ERC223_Interface.sol";
 import 'zeppelin-solidity/contracts/math/SafeMath.sol';
  
-contract GzToken is ERC223 {
+contract SampleToken is ERC223 {
   using SafeMath for uint256;
 
   mapping(address => uint) balances;
@@ -32,9 +32,9 @@ contract GzToken is ERC223 {
       return totalSupply;
   }
 
-  function GzToken() public {
-    name = "GZ Token";
-    symbol = "GZT";
+  function SampleToken() public {
+    name = "SampleToken";
+    symbol = "SMTKN";
     decimals = 2;
     totalSupply = 10000;
     balances[msg.sender] = totalSupply;
